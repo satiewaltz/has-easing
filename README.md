@@ -1,6 +1,6 @@
 # has-easing
 
-> Returns true if a string is a valid CSS timing function or name.
+> Returns true if a string is a valid [CSS timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function).
 
 Example:
 
@@ -9,7 +9,26 @@ import hasEasing from 'has-easing';
 hasEasing('cubic-bezier(.17,.67,.83,.67)
 ```
 
-This tool is useful if you writing an animable component that uses CSS transitions, but need to provide valid input for your API.
+This tool is useful to validate input an animable component that uses CSS transitions.
+
+```jsx
+// Index.jsx
+import Cube from 'cube';
+
+<Cube
+  animatable={'width'}
+  value={100}
+  time={'3s'}
+  easing={'ease-in-out'}
+/>;
+
+// Cube.jsx
+// ... Somewhere in a render() method:
+const { animatable, value, time, easing } = this.props;
+// In this case, hasEasing is used to set a default variable on invalid input:
+const easing = hasEasing(easing) ? 'ease-in-out' : easing;
+const CSSTransition = `${animatable} ${time} ${easing}`;
+```
 
 ## Install
 
