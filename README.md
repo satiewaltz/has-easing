@@ -6,7 +6,13 @@ Example:
 
 ```js
 import hasEasing from 'has-easing';
-hasEasing('cubic-bezier(.17,.67,.83,.67)
+
+hasEasing('linear'); // Returns true
+hasEasing('ease-in-out'); // Returns true
+hasEasing('spinfaster!'); // Returns false
+hasEasing(); // Returns false
+hasEasing('cubic-bezier(0.17,0.67,0.83,0.67'); // Returns true
+hasEasing('cubic-bezier(999,1.67,23,-200'); // Returns false
 ```
 
 This tool is useful to validate input an animable component that uses CSS transitions.
@@ -15,17 +21,12 @@ This tool is useful to validate input an animable component that uses CSS transi
 // Index.jsx
 import Cube from 'cube';
 
-<Cube
-  animatable={'width'}
-  value={100}
-  time={'3s'}
-  easing={'ease-in-out'}
-/>;
+<Cube animatable={'width'} time={'3s'} easing={'ease-in-out'} />;
 
 // Cube.jsx
 // ... Somewhere in a render() method:
 const { animatable, value, time, easing } = this.props;
-// In this case, hasEasing is used to set a default variable on invalid input:
+// In this case, hasEasing is used to set a default easing on invalid input:
 const easing = hasEasing(easing) ? 'ease-in-out' : easing;
 const CSSTransition = `${animatable} ${time} ${easing}`;
 ```
