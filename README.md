@@ -2,9 +2,7 @@
 
 > Returns true if a string is a valid [CSS timing function](https://developer.mozilla.org/en-US/docs/Web/CSS/single-transition-timing-function).
 
-[![GitHub license](https://img.shields.io/github/license/satiewaltz/has-easing.svg)](https://github.com/satiewaltz/has-easing/blob/master/LICENSE)
-
-[![GitHub issues](https://img.shields.io/github/issues/satiewaltz/has-easing.svg)](https://github.com/satiewaltz/has-easing/issues)
+[![GitHub license](https://img.shields.io/github/license/satiewaltz/has-easing.svg)](https://github.com/satiewaltz/has-easing/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/satiewaltz/has-easing.svg)](https://github.com/satiewaltz/has-easing/issues) [![Build Status](https://travis-ci.org/satiewaltz/has-easing.svg?branch=master)](https://travis-ci.org/satiewaltz/has-easing) [![codecov](https://codecov.io/gh/satiewaltz/has-easing/branch/master/graph/badge.svg)](https://codecov.io/gh/satiewaltz/has-easing)
 
 ## Example:
 
