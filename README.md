@@ -62,7 +62,7 @@ $ npm run major # bump major version and publish to npm e.g. 1.0.0
 
 #### Table of Contents
 
-* [hasEasing](#haseasing)
+-   [hasEasing](#haseasing)
 
 ### hasEasing
 
@@ -70,7 +70,7 @@ This function checks if an input is a valid transition timing function.
 
 **Parameters**
 
-* `easing` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** String to check if it's a valid timing function.
+-   `easing` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** String to check if it's a valid timing function.
 
 Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Boolean of whether the timing function is valid.
 
