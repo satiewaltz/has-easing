@@ -1,8 +1,7 @@
 {
   "name": "has-easing",
-  "version": "0.0.1",
-  "description":
-    "Returns true if a string is a valid CSS timing function.",
+  "version": "0.0.2",
+  "description": "Returns true if a string is a valid CSS timing function.",
   "license": "MIT",
   "repository": "satiewaltz/has-easing",
   "main": "dist/index.js",
@@ -14,7 +13,9 @@
   "engines": {
     "node": ">=6"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "jest --colors",
     "coverage": "npm test -- --coverage",
@@ -40,7 +41,13 @@
   "jest": {
     "testEnvironment": "node"
   },
-  "keywords": ["has", "timing function", "easing", "CSS", "check string"],
+  "keywords": [
+    "has",
+    "timing function",
+    "easing",
+    "CSS",
+    "check string"
+  ],
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
